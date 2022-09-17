@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="montagem.css" media="screen">
+    <title>Montagem</title>
+    <script src="//code.jivosite.com/widget/WY1QZdFQTe" async></script>
+</head>
+
+<body>
+    <header>
+        <div id="menu1topo">
+            <li><a href=""><img src="img/endereco.png" /></a>Aparecida de Goiânia-GO</li>
+            <li><a href=""><img src="img/email.png" style="width: 25px;" /></a>Email: ferramentaria@volga.com.br</li>
+            <li id="linkvolga"><a id="bot3" href="https://www.volga.com.br/" target="_blank">VOLGA.COM.BR</a></li>
+        </div>
+        <div>
+            <h1 id="anititulo1"><img src="img/logovolga.png" /></h1>
+            <h1 id="anititulo">GCS</h1>
+        </div>
+        <nav id="navprincipal">
+            <ul>
+                <li id="botinicio"><a href="index.html">INICIO</a></li>
+                <li class="menu2"><a href="compras.html">SOLICITAÇÃO DE COMPRA</a></li>
+                <li class="menu2"><a href="servicos.html">SOLICITAÇÃO DE SERVIÇO</a></li>
+                <li class="menu2"><a href="montagem.html">MONTAGEM DE CAIXAS</a></li>
+            </ul>
+        </nav>
+        <div id="socialgeral">
+            <ul id="socialtopo">
+                <li><a href="https://www.instagram.com/volga.oficial/" target="_blank"><img src="img/soci1.png" /></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/volga-en/mycompany/" target="_blank"><img
+                            src="img/linkedin.png" style="width: 25px; height: 25px;" /></a></li>
+                <hr>
+                <hr>
+                <hr>
+                <li><a href="mailto: ferramentaria@volga.com.br"><img src="img/gmail.png" target="_blank"
+                            style="width: 25px; height: 25px;" /></a></li>
+            </ul>
+        </div>
+    </header>
+    <figure id="fundotopo">
+
+    </figure>
+
+    <main id="caixageralform">
+        <div id="divtitulo">
+            <h1 id="titulo">Solicitação de Montagem e Compra de Caixa de Ferramentas</h1>
+            <p id="subtitulo">Preencha os campos para realizar a abertura de uma solicitação de Montagem de Caixa</p>
+            <br>
+        </div>
+
+        <form action="https://formsubmit.co/ferramentaria@volga.com.br" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="Nova Solicitação de Montagem de Caixa Recebida!">
+            <input type="hidden" name="_template" value="table">
+
+            <fieldset class="cabecalho">
+                <div class="divsfildset">
+                    <label class="labelcabecalho" for="SOLICITANTE"><strong>Nome do Solicitante: </strong></label>
+                    <input type="text" name="SOLICITANTE" id="SOLICITANTE" placeholder="Digite seu nome" required style="width:90%; height: 50%">
+                </div>
+                <div class="divsfildset">
+                    <label class="labelcabecalho" for="DEPARTAMENTO"><strong>Departamento: </strong></label>
+                    <input type="text" name="DEPARTAMENTO" id="DEPARTAMENTO" placeholder="Digite seu departamento" required style="width:90%; height: 50%">
+                </div>
+            </fieldset>
+
+            <div class="campo" id="caixaemail">
+                <label for="email"><strong>E-mail: </strong></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required style="width:95%">
+            </div>
+
+            <div class="selecionar">
+                <label for="PADRAO"><strong>Selecione o padrão da caixa de ferramentas: </strong></label>
+                <select id="PADRAO" name="PADRÃO DE CAIXA" required style="width: 97.6%; height: 75%">
+                    <option selected disabled value="">Selecione</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Cabeamento" class="opselect">Cabeamento (Elétrica)</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Mecanica" class="opselect">Mecânica</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Teste" class="opselect">Teste</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Service" class="opselect">Service (Elétrica + Mecânica)</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Barramento" class="opselect">Barramento</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Dobras" class="opselect">Dobras</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Punsionadeira" class="opselect">Puncionadeira</option>
+                    <option type="select" name="PADRÃO DE CAIXA" value="Solda" class="opselect">Solda</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="selecionar1">
+                <label for="QUANTIDADE" class="opselect"><strong>Selecione a quantidade de caixas e a data prevista para uso: </strong></label>
+                <div id="QUANTIDADE">
+                    <input type="number" id="number" name="QUANTIDADE"  min="1" max="15" value="1" style="width: 40%; height: 45%;" required class="opselect">
+                    <label for="DATA"></label>
+                    <input type="date" id="date" name="DATA" required class="opselect">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="campo">
+                <label class="caixatextolab"><strong>Adicione abaixo uma observação:</strong></label><br>
+                <textarea row="6" style="width: 95%; height: 100px;" id="PRODUTO" name="PRODUTO"></textarea>
+            </div>
+
+            <div id="botoespagina">
+                <div class="botenviar">
+                    <button class="botaoenviar" type="submit"> Enviar ➔ </button>
+                </div>
+                <input type="hidden" name="_next" value="https://supplyvolga.online/enviado.html">
+                <input type="hidden" name="_autoresponse" value=" SOLICITAÇÃO DE MONTAGEM ABERTA COM SUCESSO, BREVE RETORNAREMOS">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_cc" value=" manutencao@volga.com.br ">
+                <input type="hidden" name="_cc" value=" kleiber.paiva@volga.com.br ">
+            </div>
+
+        </form>
+    </main>
+    <figure id="fundofooter">
+
+    </figure>
+
+    <footer>
+        <div id="caixafooter">
+
+            <figure id="img1">
+                <img src="img/logobranca.png" alt="logovolga">
+            </figure>
+
+
+            <div id="caixaendereco">
+                <figure id="img2">
+                    <img src="img/endereco.png" alt="endereçovolga">
+                </figure>
+                <p>Av. Elmar Arantes Cabral, Qd. 01 Lt. 33 ao 38. Pq. Industrial Vice-Presidente José de Alencar,
+                    Aparecida de Goiânia - GO, CEP: 74993-535</p>
+            </div>
+
+            <div id="caixacontato">
+                <figure id="img3">
+                    <img src="img/telefone (2).png" alt="">
+                </figure>
+                <div>
+                    <p> (62) 3207-6161 - Matriz </p>
+                    <p> (81) 3126-1010 - Filial Recife </p>
+                    <p> (11) 3376-6119 - Filial São Paulo </p>
+                </div>
+
+                <div id="copryght">
+                    <a href="https://www.linkedin.com/in/gabriel-jalison/" target="_blank">© Volga 2022 - Desenvolvido
+                        por: Gabriel Jalison</a>
+                    <ul id="socialfooter">
+                        <li><a href="https://www.instagram.com/volga.oficial/" target="_blank"><img
+                                    src="img/soci1.png" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/volga-en/mycompany/" target="_blank"><img
+                                    src="img/linkedin.png" style="width: 20px; height: 20px;" /></a></li>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <li><a href="mailto: ferramentaria@volga.com.br"><img src="img/gmail.png" target="_blank"
+                                    style="width: 20px; height: 20px;" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
